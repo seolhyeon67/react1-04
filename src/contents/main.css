@@ -1,0 +1,65 @@
+#contents {
+    color: white;
+    width: 1280px; height: 720px;
+    background: rgb(50,50,50); display: flex;
+  }
+div.titlebox {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 280px; height: 100%;
+    border-right: solid 2px white;
+}
+div.tubox{
+    position: absolute; top: 150px;
+    font: italic bold 30pt/50px "Times New Roman", serif;
+}
+div.tdbox {
+    text-align: center;
+    position: absolute; bottom: 20px;
+    font: normal 10pt/16pt Verdana;
+}
+div.contentsbox {
+    width: 1000px;
+    display: flex; flex-direction: column;
+}
+div.nav{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%; height: 120px; border-bottom: solid 2px white;
+}
+div.icon {
+    background-image: url(/public/eicon.png);
+    background-size: contain;
+    position: absolute; height: 30px;
+    bottom: 10px; right: 10px; width: 30px;
+}
+div.section {
+    display: flex; 
+    width: 100%; height: 600px;
+}
+div.article {
+    position: relative;
+    box-sizing: border-box;
+    padding: 70px 40px;
+    width: 250px; height: 100%;
+    opacity: 0.4;
+}
+div.article p:nth-child(1) {
+    margin: 0px;
+    line-height: 55px;
+    font-size: 30px; font-weight: bold;
+    width: 50px; border-bottom: solid 2px gray;
+}
+div.article p:nth-child(2) {
+    font-weight: bold;
+    margin: 18px 0px;
+}
+div.article p:nth-child(3) {
+    font-size: 17px;
+    line-height: 23px;
+}
+img {
+    position: absolute; bottom: 70px;
+    width: 170px;
+}
