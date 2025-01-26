@@ -39,11 +39,23 @@ div.section {
     width: 100%; height: 600px;
 }
 div.article {
+    background-image: url(/public/back.png);
     position: relative;
     box-sizing: border-box;
     padding: 70px 40px;
     width: 250px; height: 100%;
     opacity: 0.4;
+    background-size: 0px 100%;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+}
+div.article:hover {
+    opacity: 1;
+    background-size: 250px 100%;
+}
+div.article .link{
+    text-decoration: none;
+    color: white;
 }
 div.article p:nth-child(1) {
     margin: 0px;
@@ -59,7 +71,11 @@ div.article p:nth-child(3) {
     font-size: 17px;
     line-height: 23px;
 }
-img {
+img.img {
     position: absolute; bottom: 70px;
     width: 170px;
+    transition-duration: 0.5s;
+}
+div.article:hover img {
+    transform: translate(15px, -7px) scale(1.15,1.15);
 }

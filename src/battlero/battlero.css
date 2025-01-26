@@ -1,0 +1,34 @@
+#battlero {
+    background-image: url(/public/bg.png);
+    width: 100% ;height: 100%;
+}
+#section {
+    text-align: center;
+    position: relative;
+    top: 120px;
+    margin: 0px auto;
+    width: 700px; height: 600px;
+}
+p.hero {
+    margin: 3px 5px;
+    background-color: rgb(92, 91, 91);
+    transform: skewX(-15deg);
+    border-radius: 10px;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 80px; height: 90px;
+    border: 3px solid white;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0s;
+    transition: background-color 0.5s;
+}
+p.hero>img {
+    transform: skewX(15deg);
+    width: 80px; height: 90px;
+    object-fit: cover;
+}
+p.hero:hover {
+    background-color: orange;
+    transform: skewX(-15deg) scale(1.3,1.3);
+}
